@@ -11,7 +11,7 @@ const Letter = props => {
         return <span style={{display:'inline-block',width:letterSize}}/>;
     }
     return (
-        <span style={letterStyles}>{revealed ? char : '_'}</span>
+        <span style={letterStyles}>{revealed ? char.toUpperCase() : '_'}</span>
     );
 }
 const PhraseDisplay = props => {
