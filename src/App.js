@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import PhraseDisplay from './PhraseDisplay';
+import HowToPlay from './HowToPlay';
 
 const strikeThrough = {
     textDecoration: 'line-through'
@@ -36,6 +37,7 @@ class App extends Component {
                 <div>
                     HP: {Array(lives).fill('♥').join(' ')}
                 </div>
+                { guesses.length ? null : <HowToPlay/> }
             </div>
         );
     }
